@@ -1,0 +1,34 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Addition</title>
+</head>
+<body>
+
+    <h2>Addition of Two Numbers</h2>
+
+    <input type="number" id="num1" placeholder="Enter first number">
+    <input type="number" id="num2" placeholder="Enter second number">
+
+    <button onclick="addNumbers()">Add</button>
+
+    <h3 id="result"></h3>
+
+    <script>
+        function addNumbers() {
+            // Get values from input fields
+            let a = Number(document.getElementById("num1").value);
+            let b = Number(document.getElementById("num2").value);
+
+            // Calculate sum
+            let sum = a + b;
+
+            // Display result using DOM
+            document.getElementById("result").innerHTML =
+                "Sum = " + sum;
+        }
+    </script>
+
+</body>
+</html>
